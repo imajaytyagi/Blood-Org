@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Blood Org Website">
+    <meta name="keywords" content="blood Org, donate blood, need blood">
+    <meta name="author" content="Ajay Tyagi">
+
+    <title>Blood Org | Welcome</title>
+    
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <a href="index.html"><img src="./img/bloodorg2.png"></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about_blood.html">About Blood</a></li>
+            <li><a href="editorial.html">Editorial</a></li>
+            <li><a href="request.html">Raise A Request</a></li>
+            <li><a href="donate.html">Be A Donor</a></li>
+            <li class="current"><a href="feedback.html">Feedback</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <aside id="feedside">
+          <div class="feeddark">
+            <h3>GIVE YOUR FEEDBACK HERE</h3>
+            <form class="quote" action="http://localhost:3002/feed" method="POST">
+              <div>
+                <label>Name</label><br>
+                <input type="text" placeholder="Name">
+              </div>
+              <div>
+                <label>Email</label><br>
+                <input type="email" placeholder="Email Address">
+              </div>
+              <div>
+                <label>Message</label><br>
+                <textarea placeholder="Message"></textarea>
+              </div>
+              <button class="button_1" type="submit">Send</button>
+          </form>
+          </div>
+        </aside>
+        
+  </body>
+  </html>

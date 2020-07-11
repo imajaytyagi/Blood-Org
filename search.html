@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Blood Org | Dashboard</title>
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:700, 600,500,400,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="	">
+		<link rel="stylesheet" href="main.css">
+
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/modules/data.js"></script> 
+		<script src="main.js"></script> 
+
+	</head>
+	<body>
+		<div class="header"onclick="window.location.href='dashboard.html'">
+			<div class="logo">
+				<i class="fa fa-tachometer"></i>
+				<span>Blood Org</span>
+			</div>
+			<a href="#" class="nav-trigger"><span></span></a>
+		</div>
+		<div class="side-nav">
+			<div class="logo">
+				<i class="fa fa-tachometer"></i>
+				<span>Blood Org</span>
+			</div>
+			
+			<nav>
+				<ul>
+					<li>
+						<a href="search.html">
+							<span><i></i></span>
+							<span>Search</span>
+						</a>
+					</li>
+					<li>
+						<a href="update.html">
+
+							<span><i></i></span>
+							<span>Update</span>
+						</a>
+					</li>
+					<li>
+						<a href="delete.html">
+							<span><i></i></span>
+							<span>Delete</span>
+						</a>
+					</li>
+										<li>
+						<a href="adminfeedback.html">
+							<span><i></i></span>
+							<span>Feedback</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		
+	</div>
+<br><br><br>
+<!--		<aside id="feedside">
+      	  <div class="feeddark">
+            <h3>SEARCH</h3>
+        	    <form   class="quote"  action="http://localhost:8080/example" method="POST">
+            	<div>
+                Name: <input type="text" name="fname"><br>                
+                State <input type="text" name="state" ><br>
+                Date Of Birth <input type="text" name="dob"><br>                
+                Blood Type<input type="text" name="blood"><br><br>
+                <button class="button_1" type="submit">Submit</button>
+              	</div>
+            	</form>
+          </div>
+      	</aside>
+-->
+      	
+		<a href="http://localhost:800/search"><button class="button_2" type="submit">Get Request Details</button></a>
+		<a href="http://localhost:800/donor"><button class="button_2" type="submit">Get Donor Details  </button></a>
+		
+
+      </body>
+      </html>

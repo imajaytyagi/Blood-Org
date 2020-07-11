@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Blood Org Website">
+    <meta name="keywords" content="blood Org, donate blood, need blood">
+    <meta name="author" content="Ajay Tyagi, Akarshit Joshi">
+
+    <title>Blood Org | Welcome</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script>        
+           function phoneno(){          
+            $('#phone').keypress(function(e) {
+                var a = [];
+                var k = e.which;
+
+                for (i = 48; i < 58; i++)
+                    a.push(i);
+
+                if (!(a.indexOf(k)>=0))
+                    e.preventDefault();
+            });
+        }
+       </script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <a href="index.html"><img src="./img/bloodorg2.png"></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about_blood.html">About Blood</a></li>
+            <li><a href="editorial.html">Editorial</a></li>
+            <li><a href="request.html">Raise A Request</a></li>
+            <li class="current"><a href="donate.html">Be A Donor</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <aside id="feedside">
+          <div class="feeddark">
+            <h3>BE A DONOR</h3>
+            <form class="quote"  action="http://localhost:3000/donor" method="POST">
+              <div>
+                First name: <input type="text" name="fname" placeholder="Donor's name"><br>
+                Phone No. <input type="text" id="phone" name="phone" onkeypress="phoneno()" maxlength="10" placeholder="Phone No."><br>
+                Address:<input type="text" name="addr" placeholder="Address"><br>
+                State <input type="text" name="state" placeholder="State"><br>
+                Date Of Birth <input type="text" name="dob" placeholder="__/__/__"><br>
+                Gender<br>
+                <select>
+                <option value="male" selected="selected">Male</option><br><option value="female">Female</option><br><option value="other">Other</option>
+                </select><br>
+                Blood Type<input type="text" name="blood" placeholder="Blood type"><br>
+                Email<input type="text" name="email" placeholder="example@mail.com"><br>
+                Quantity<input type="number" name="quantity" placeholder="in ml" min="490"><br>
+                Last Donation<input type="number" name="days" placeholder="days" min="59"><br><br>
+
+                <button class="button_1" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+    </aside>
+    <!-- <footer>
+      <p>Blood Org, Copyright &copy; 2019</p>
+    </footer>
+  -->
+  </body>
+  </html>
